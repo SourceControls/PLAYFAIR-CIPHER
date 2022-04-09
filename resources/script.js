@@ -3,18 +3,18 @@ var isEnd = false;
 var flag = false;
 var flagX = false;
 var flagAdd = false;
-
+var playFairName = "PlayFair Cipher";
 
 function encrypt(){
   var cipherName = document.getElementById("cipherName").innerHTML;
-  if(cipherName.localeCompare("PlayFair Cipher") == 0){
+  if(cipherName.localeCompare(playFairName) == 0){
     encryptPlayFair();
   }
   console.log(cipherName);
 }
 function descrypt(){
   let cipherName = document.getElementById("cipherName").innerHTML;
-  if(cipherName.localeCompare("PlayFair Cipher") == 0){
+  if(cipherName.localeCompare(playFairName) == 0){
     descryptPlayFair();
   }
   console.log(cipherName);
